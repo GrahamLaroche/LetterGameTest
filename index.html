@@ -1,0 +1,47 @@
+<!--
+File: index.html
+GUI Assignment: Scrabble
+Graham Laroche, graham_laroche@student.uml.edu
+6/26/2024
+The main html webpage that will display a game of scrabble.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scrabble</title>
+    <!-- style sheets -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href=
+        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/themes/base/jquery-ui.css">
+</head>
+<body>
+    <h1>
+        Click "New Game" to start the game.<br>
+        Drag tiles from the rack to the board. Tiles must be adjacent to each other.<br>
+        Clicking "Next Word" will add to your score and clear the board.<br>
+        If you want different tiles, click "Trade Tiles".<br>
+    </h1>
+    <img id="boardLine" src="images/Scrabble_Board_OneLine.png" alt="Game Board">
+    <div id="boardSlots"></div>
+    <img id="tileHolder" src="images/scrabble-tile-holder-406774_640.png" alt="Tile Rack">
+    <div id="holderSlots"></div>
+    <div id="buttons">
+        <button type="button" onclick="newGame()">New Game</button>
+        <button type="button" onclick="nextWord()">Next Word</button>
+        <button type="button" onclick="swapRackTiles()">Trade Tiles</button>
+        <p id="score">Score: 0</p>
+    </div>
+
+    <!-- JQuery and JQuery UI-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+
+    <!-- my script -->
+    <script src="index.js"></script>
+</body>
+</html>

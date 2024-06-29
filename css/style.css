@@ -1,0 +1,45 @@
+/*
+File: style.css
+GUI Assignment: Scrabble
+Graham Laroche, graham_laroche@student.uml.edu
+6/26/2024
+Style sheet that controls the styling of the index.html for the scrabble page
+*/
+
+#boardLine {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+#tileHolder {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#buttons {
+    margin-left: 200px;
+}
+
+#score {
+    display: inline;
+    margin-left: 1em;
+}
+
+h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 120%;
+}
+
+#boardSlots {
+    position: absolute;
+    top: 138px;
+    left: 31px;
+}
+
+#holderSlots {
+    position: absolute;
+    top: 300px;
+    left: 70px;
+}
